@@ -5,6 +5,13 @@
   home.homeDirectory = "/home/sicko";
   home.stateVersion = "26.05";
 
+  home.file =  {
+    ".config/noctalia" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dots/noctalia";
+      recursive = true;
+    };
+  };
+
   programs.git = {
     enable = true;
     userName = "hamza-dev7";
