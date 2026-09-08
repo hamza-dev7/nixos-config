@@ -69,6 +69,8 @@
     zed-editor
     yazi
     nil
+    nixd
+    xdg-user-dirs
   ];
 
   fonts.packages = with pkgs; [

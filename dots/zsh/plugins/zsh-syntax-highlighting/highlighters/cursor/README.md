@@ -1,1 +1,0 @@
-/home/sicko/nixos-config/dots/zsh/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/cursor/../../docs/highlighters/cursor.md
