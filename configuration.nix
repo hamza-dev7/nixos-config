@@ -3,7 +3,7 @@
 
 {
   imports =
-    [ 
+    [
       ./hardware-configuration.nix
     ];
 
@@ -15,7 +15,7 @@
   networking.hostName = "nixy"; # Define your hostname.
   networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];	
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   time.timeZone = "Africa/Casablanca";
 
@@ -33,7 +33,7 @@
   };
 
   services.displayManager.ly.enable = true;
-  services.displayManager.ly.settings = { 
+  services.displayManager.ly.settings = {
     bigclock = true;
     bigclock_12hr = true;
     hide_key_hints = true;
@@ -56,7 +56,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    neovim 
+    neovim
     wget
     git
     kitty
@@ -68,6 +68,7 @@
     adwaita-icon-theme
     zed-editor
     yazi
+    nil
   ];
 
   fonts.packages = with pkgs; [
@@ -90,7 +91,7 @@
 
 
 
-  	
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

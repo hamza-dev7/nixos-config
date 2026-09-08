@@ -1,0 +1,1 @@
+/home/sicko/nixos-config/dots/zsh/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/root/../../docs/highlighters/root.md
