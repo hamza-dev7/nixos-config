@@ -1,0 +1,19 @@
+{ config, pkgs, ... }:
+
+{
+  home.username = "sicko";
+  home.homeDirectory = "/home/sicko";
+  home.stateVersion = "26.05";
+
+  programs.git = {
+    enable = true;
+    userName = "hamza-dev7";
+    userEmail = "hamza77dev@gmail.com";
+    extraConfig = {
+      credential.helper = "store";
+      init.defaultBranch = "main";
+    };
+  };
+
+  programs.home-manager.enable = true;
+}
