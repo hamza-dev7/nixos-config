@@ -14,9 +14,11 @@
 
   programs.git = {
     enable = true;
-    userName = "hamza-dev7";
-    userEmail = "hamza77dev@gmail.com";
-    extraConfig = {
+
+    settings = {
+      user.name = "hamza-dev7";
+      user.email = "hamza77dev@gmail.com";
+
       credential.helper = "store";
       init.defaultBranch = "main";
     };
