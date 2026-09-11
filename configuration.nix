@@ -71,7 +71,7 @@
     nil
     nixd
     xdg-user-dirs
-    emacs
+    opencode
   ];
 
   fonts.packages = with pkgs; [
