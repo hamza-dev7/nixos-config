@@ -72,6 +72,7 @@
     nixd
     xdg-user-dirs
     opencode
+    python3
   ];
 
   fonts.packages = with pkgs; [
