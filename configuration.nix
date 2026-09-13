@@ -82,8 +82,11 @@
   programs.niri.enable = true;
   programs.firefox.enable = true;
   programs.zsh.enable = true;
-  programs.noctalia.enable = true;
   programs.nix-ld.enable = true;
+  programs.noctalia = {
+    enable = true;
+    recommendedServices.enable = true;
+  };
 
   nix.gc = {
     automatic = true;
