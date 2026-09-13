@@ -67,7 +67,6 @@
     eza
     adwaita-icon-theme
     zed-editor
-    yazi
     nil
     nixd
     xdg-user-dirs
@@ -76,6 +75,7 @@
     brave
     librewolf
     _7zz
+    vivaldi
   ];
 
   fonts.packages = with pkgs; [
@@ -83,6 +83,7 @@
   ];
 
   programs.niri.enable = true;
+  programs.yazi.enable = true;
   programs.firefox.enable = true;
   programs.zsh.enable = true;
   programs.nix-ld.enable = true;
