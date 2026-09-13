@@ -72,9 +72,7 @@
     xdg-user-dirs
     opencode
     python3
-    librewolf
     _7zz
-    vivaldi
   ] ++ [
    inputs.zen-browser.packages.${system}.default
   ];
