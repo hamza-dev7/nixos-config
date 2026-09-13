@@ -75,6 +75,7 @@
     python3
     brave
     librewolf
+    _7zz
   ];
 
   fonts.packages = with pkgs; [
