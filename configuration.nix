@@ -72,7 +72,6 @@
     xdg-user-dirs
     opencode
     python3
-    brave
     librewolf
     _7zz
     vivaldi
