@@ -73,6 +73,8 @@
     xdg-user-dirs
     opencode
     python3
+    brave
+    librewolf
   ];
 
   fonts.packages = with pkgs; [
