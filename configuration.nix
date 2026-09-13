@@ -1,5 +1,5 @@
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -76,6 +76,8 @@
     librewolf
     _7zz
     vivaldi
+  ] ++ [
+   inputs.zen-browser.packages.${system}.default
   ];
 
   fonts.packages = with pkgs; [
