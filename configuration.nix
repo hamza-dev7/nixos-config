@@ -74,7 +74,7 @@
     python3
     _7zz
   ] ++ [
-   inputs.zen-browser.packages.${system}.default
+   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   fonts.packages = with pkgs; [
