@@ -83,6 +83,7 @@
     zen-browser
 
     # Stable releases
+    pkgs-26_05.rofi
     pkgs-26_05.wget
     pkgs-26_05.git
     pkgs-26_05.kitty
