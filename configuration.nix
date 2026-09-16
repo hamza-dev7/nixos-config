@@ -56,6 +56,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    # Tools
     neovim
     wget
     git
@@ -66,13 +67,16 @@
     fzf
     eza
     adwaita-icon-theme
-    zed-editor
     nil
     nixd
     xdg-user-dirs
-    opencode
-    python3
     _7zz
+    # Apps
+
+    # Unstable releases
+    pkgs-unstable.opencode
+    pkgs-unstable.python3
+    pkgs-unstable.zed-editor
   ] ++ [
    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
@@ -94,7 +98,7 @@
   nix.gc = {
     automatic = true;
     dates = "daily";
-    options = "--delete-older-than 5d";
+    options = "--delete-older-than 3d";
   };
 
 
