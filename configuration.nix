@@ -1,5 +1,11 @@
 
-{ config, pkgs, inputs, pkgs-26_05, zen-browser, ... }:
+{ config,
+  inputs,
+  pkgs,
+  pkgs-26_05,
+  zen-browser,
+  ...
+}:
 
 {
   imports =
