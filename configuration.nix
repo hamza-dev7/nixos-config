@@ -58,9 +58,6 @@
   environment.systemPackages = with pkgs; [
     # Tools
     neovim
-    wget
-    git
-    kitty
     fuzzel
     stow
     zoxide
@@ -70,13 +67,16 @@
     nil
     nixd
     xdg-user-dirs
-    _7zz
+    opencode
+    python3
     # Apps
+    zed-editor
+    # Stable releases
+    pkgs-26_05.wget
+    pkgs-26_05.git
+    pkgs-26_05.kitty
+    pkgs-26_05._7zz
 
-    # Unstable releases
-    pkgs-unstable.opencode
-    pkgs-unstable.python3
-    pkgs-unstable.zed-editor
   ] ++ [
    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
