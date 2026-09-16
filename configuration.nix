@@ -1,5 +1,5 @@
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, pkgs-26_05, zen-browser, ... }:
 
 {
   imports =
@@ -69,16 +69,18 @@
     xdg-user-dirs
     opencode
     python3
+
     # Apps
     zed-editor
+
+    # Flake packages
+    zen-browser
+
     # Stable releases
     pkgs-26_05.wget
     pkgs-26_05.git
     pkgs-26_05.kitty
     pkgs-26_05._7zz
-
-  ] ++ [
-   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   fonts.packages = with pkgs; [
