@@ -19,7 +19,7 @@
   let
     system = "x86_64-linux";
     pkgs-26_05 = import nixpkgs-26_05 { inherit system; };
-    zen-browser = zen-browser.packages.${system}.default;
+    zen-browser = inputs.zen-browser.packages.${system}.default;
   in
 
   {
