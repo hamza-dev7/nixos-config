@@ -75,6 +75,7 @@
     python3
     fastfetch
     fetch
+    awww
 
     # Apps
     neovim
