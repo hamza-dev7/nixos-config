@@ -73,6 +73,8 @@
     xdg-user-dirs
     opencode
     python3
+    fastfetch
+    fetch
 
     # Apps
     neovim
