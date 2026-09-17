@@ -6,19 +6,19 @@
   home.stateVersion = "26.05";
 
 
-  xdg.desktopEntries = {
-    rofi = {
-      name = "Rofi";
-      type = "Application";
-      noDisplay = true;
-    };
+  home.file.".local/share/applications/rofi.desktop".text = ''
+    [Desktop Entry]
+    Type=Application
+    Name=Rofi
+    NoDisplay=true
+  '';
 
-    rofi-theme-selector = {
-      name = "Rofi Theme Selector";
-      type = "Application";
-      noDisplay = true;
-    };
-  };
+  home.file.".local/share/applications/rofi-theme-selector.desktop".text = ''
+    [Desktop Entry]
+    Type=Application
+    Name=Rofi Theme Selector
+    NoDisplay=true
+  '';
 
   programs.git = {
     enable = true;
