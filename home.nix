@@ -5,12 +5,20 @@
   home.homeDirectory = "/home/sicko";
   home.stateVersion = "26.05";
 
-  # home.file =  {
-  #   ".config/noctalia" = {
-  #     source = config.lib.file.mkOutOfStoreSymlink /home/sicko/nixos-config/dots/noctalia;
-  #     recursive = true;
-  #   };
-  # };
+
+  xdg.desktopEntries = {
+    rofi = {
+      name = "Rofi";
+      type = "Application";
+      noDisplay = true;
+    };
+
+    rofi-theme-selector = {
+      name = "Rofi Theme Selector";
+      type = "Application";
+      noDisplay = true;
+    };
+  };
 
   programs.git = {
     enable = true;
