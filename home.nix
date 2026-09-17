@@ -7,11 +7,7 @@
 
 
   xdg.desktopEntries = {
-    rofi = {
-      name = "Rofi";
-      type = "Application";
-      noDisplay = true;
-    };
+    rofi.noDisplay = true;
 
     rofi-theme-selector = {
       name = "Rofi Theme Selector";
