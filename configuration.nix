@@ -63,8 +63,6 @@
 
   environment.systemPackages = with pkgs; [
     # Tools
-    neovim
-    fuzzel
     stow
     zoxide
     fzf
@@ -77,7 +75,10 @@
     python3
 
     # Apps
+    neovim
+    fuzzel
     zed-editor
+    btop
 
     # Flake packages
     zen-browser
