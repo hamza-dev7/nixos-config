@@ -11,4 +11,5 @@ sudo ln -s $HOME/.nixos-config/configuration.nix /etc/nixos/configuration.nix
 sudo ln -s $HOME/.nixos-config/home.nix /etc/nixos/home.nix
 sudo ln -s $HOME/.nixos-config/flake.nix /etc/nixos/flake.nix
 sudo ln -s $HOME/.nixos-config/flake.lock /etc/nixos/flake.lock
+sudo ln -s /home/sicko/.nixos-config/modules /etc/nixos/modules
 ```
