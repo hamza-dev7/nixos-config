@@ -11,6 +11,7 @@
     freetype
     glib
     dbus
+    krb5
     wayland
     libx11
     libxcb
