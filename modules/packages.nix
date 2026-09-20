@@ -19,7 +19,7 @@
     fastfetch
     fetch
     awww
-    qt6.qtdeclarative-
+    qt6.qtdeclarative
 
     # Apps
     neovim
