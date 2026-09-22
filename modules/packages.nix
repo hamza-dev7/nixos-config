@@ -10,7 +10,6 @@
     zoxide
     fzf
     eza
-    adwaita-icon-theme
     nil
     nixd
     xdg-user-dirs
@@ -20,12 +19,16 @@
     fetch
     awww
     qt6.qtdeclarative
+    qt6Packages.qt6ct
 
     # Apps
     neovim
     fuzzel
     zed-editor
     btop
+
+    # Themes
+    adwaita-icon-theme
 
     # Flake packages
     zen-browser
