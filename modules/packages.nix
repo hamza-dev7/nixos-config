@@ -29,6 +29,7 @@
 
     # Themes
     adwaita-icon-theme
+    qogir-icon-theme
 
     # Flake packages
     zen-browser
