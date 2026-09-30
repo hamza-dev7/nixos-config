@@ -9,12 +9,12 @@
     # Tools
     nil # Nix package manager
     nixd # Nix language server
+    fetch # Animated fetch
     opencode # Ai agent
     python3 # Python interpreter
     awww # Wallpaper daemon
     qt6.qtdeclarative # Qt6 declarative
     qt6Packages.qt6ct # Qt6 color theme
-
 
     # Apps
     neovim # Terminal text editor
@@ -31,7 +31,6 @@
     zen-browser # Browser
 
     # Stable
-    pkgs-26_05.fetch # Animated fetch
     pkgs-26_05.stow # dotfile management
     pkgs-26_05.zoxide # Directory navigation
     pkgs-26_05.fzf # Fuzzy finder
