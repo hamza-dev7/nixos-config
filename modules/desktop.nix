@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     bigclock = true;
@@ -11,10 +13,10 @@
   };
 
   programs.niri.enable = true;
-  programs.noctalia = {
-    enable = true;
-    recommendedServices.enable = true;
-  };
+  # programs.noctalia = {
+  #   enable = true;
+  #   recommendedServices.enable = true;
+  # };
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono

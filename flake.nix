@@ -1,8 +1,8 @@
 {
   description = "A very basic flake";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nixpkgs-26_05.url = "github:nixos/nixpkgs?ref=nixos-26.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -15,17 +15,17 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-26_05, home-manager, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, ... }:
   let
     system = "x86_64-linux";
-    pkgs-26_05 = import nixpkgs-26_05 { inherit system; };
+    pkgs-unstable = import nixpkgs-unstable { inherit system; };
     zen-browser = inputs.zen-browser.packages.${system}.default;
   in
 
   {
     nixosConfigurations.nixy = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit inputs pkgs-26_05 zen-browser; };
+      specialArgs = { inherit inputs pkgs-unstable zen-browser; };
       modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager

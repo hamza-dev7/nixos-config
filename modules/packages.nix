@@ -1,4 +1,4 @@
-{ pkgs, pkgs-26_05, zen-browser, ... }:
+{ pkgs, pkgs-unstable, zen-browser, ... }:
 
 {
   programs.yazi.enable = true;
@@ -7,19 +7,25 @@
   environment.systemPackages = with pkgs; [
 
     # Tools
-    nil # Nix package manager
-    nixd # Nix language server
     fetch # Animated fetch
     opencode # Ai agent
-    python3 # Python interpreter
     awww # Wallpaper daemon
     qt6.qtdeclarative # Qt6 declarative
     qt6Packages.qt6ct # Qt6 color theme
+    stow # dotfile management
+    zoxide # Directory navigation
+    fzf # Fuzzy finder
+    eza # File explorer
+    xdg-user-dirs # User directory management
+    fastfetch # Simple fetch
+    wget # HTTP client
+    _7zz # Archive extractor
+    git # Git
+    btop # System monitor
 
     # Apps
     neovim # Terminal text editor
     fuzzel # Simple wayland app launcher
-    zed-editor # Code editor
     rofi # App launcher
     kitty # Terminal emulator
 
@@ -30,16 +36,14 @@
     # Flake packages
     zen-browser # Browser
 
-    # Stable
-    pkgs-26_05.stow # dotfile management
-    pkgs-26_05.zoxide # Directory navigation
-    pkgs-26_05.fzf # Fuzzy finder
-    pkgs-26_05.eza # File explorer
-    pkgs-26_05.xdg-user-dirs # User directory management
-    pkgs-26_05.fastfetch # Simple fetch
-    pkgs-26_05.wget # HTTP client
-    pkgs-26_05._7zz # Archive extractor
-    pkgs-26_05.git # Git
-    pkgs-26_05.btop # System monitor
+    # Unstable
+    pkgs-unstable.zed-editor # Code editor
+    pkgs-unstable.python3 # Python interpreter
+    pkgs-unstable.nil # Nix package manager
+    pkgs-unstable.nixd # Nix language server
+
+    # Noctalia
+    noctalia # Shell
+    bluez # Bluetooth
   ];
 }
