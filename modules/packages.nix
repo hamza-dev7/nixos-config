@@ -7,7 +7,6 @@
   environment.systemPackages = with pkgs; [
 
     # Tools
-    fetch # Animated fetch
     opencode # Ai agent
     awww # Wallpaper daemon
     qt6.qtdeclarative # Qt6 declarative
@@ -41,6 +40,7 @@
     pkgs-unstable.python3 # Python interpreter
     pkgs-unstable.nil # Nix package manager
     pkgs-unstable.nixd # Nix language server
+    pkgs-unstable.fetch # Animated fetch
 
     # Noctalia
     noctalia # Shell
