@@ -1,4 +1,4 @@
-{ pkgs, pkgs-unstable, zen-browser, ... }:
+{ pkgs, pkgs-unstable, zen-browser, helium, ... }:
 
 {
   programs.yazi.enable = true;
@@ -34,6 +34,7 @@
 
     # Flake packages
     zen-browser # Browser
+    helium # Browser
 
     # Unstable
     pkgs-unstable.zed-editor # Code editor

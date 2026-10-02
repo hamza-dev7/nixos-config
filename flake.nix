@@ -13,6 +13,11 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    helium = {
+      url = "github:AlvaroParker/helium-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, ... }:
@@ -20,12 +25,13 @@
     system = "x86_64-linux";
     pkgs-unstable = import nixpkgs-unstable { inherit system; };
     zen-browser = inputs.zen-browser.packages.${system}.default;
+    helium = inputs.helium.packages.${system}.default;
   in
 
   {
     nixosConfigurations.nixy = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit inputs pkgs-unstable zen-browser; };
+      specialArgs = { inherit inputs pkgs-unstable zen-browser helium; };
       modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager

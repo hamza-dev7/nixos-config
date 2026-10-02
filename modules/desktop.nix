@@ -13,10 +13,6 @@
   };
 
   programs.niri.enable = true;
-  # programs.noctalia = {
-  #   enable = true;
-  #   recommendedServices.enable = true;
-  # };
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
