@@ -37,6 +37,7 @@
     helium # Browser
 
     # Unstable
+    pkgs-unstable.brave-origin # Browser
     pkgs-unstable.zed-editor # Code editor
     pkgs-unstable.python3 # Python interpreter
     pkgs-unstable.nil # Nix package manager
